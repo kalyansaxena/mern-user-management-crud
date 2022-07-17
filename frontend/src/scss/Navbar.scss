@@ -1,0 +1,95 @@
+.navbar {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  .nav-links {
+    display: flex;
+    list-style: none;
+
+    .nav-item {
+      font-weight: bold;
+      margin-right: 1rem;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+  }
+}
+
+.gradient__bg {
+  /* ff 3.6+ */
+  background: -moz-radial-gradient(
+    circle at 3% 25%,
+    rgba(0, 40, 83, 1) 0%,
+    rgba(4, 12, 24, 1) 100%
+  );
+
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-radial-gradient(
+    circle at 3% 25%,
+    rgba(0, 40, 83, 1) 0%,
+    rgba(4, 12, 24, 1) 100%
+  );
+
+  /* opera 11.10+ */
+  background: -o-radial-gradient(
+    circle at 3% 25%,
+    rgba(0, 40, 83, 1) 0%,
+    rgba(4, 12, 24, 1) 100%
+  );
+
+  /* ie 10+ */
+  background: -ms-radial-gradient(
+    circle at 3% 25%,
+    rgba(0, 40, 83, 1) 0%,
+    rgba(4, 12, 24, 1) 100%
+  );
+
+  /* global 92%+ browsers support */
+  background: radial-gradient(
+    circle at 3% 25%,
+    rgba(0, 40, 83, 1) 0%,
+    rgba(4, 12, 24, 1) 100%
+  );
+}
+
+@media (max-width: 575.98px) {
+  .navbar {
+    .nav-links {
+      width: 100%;
+      margin: 0;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      list-style: none;
+
+      .nav-item {
+        font-weight: bold;
+        margin-right: 0;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media (max-width: 300px) {
+  .navbar {
+    .nav-links {
+      width: 100%;
+      margin: 0;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      list-style: none;
+
+      .nav-item {
+        font-weight: bold;
+        margin-right: 0;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+    }
+  }
+}

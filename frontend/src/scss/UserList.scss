@@ -1,0 +1,54 @@
+.user-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 60px);
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url("https://images.pexels.com/photos/114979/pexels-photo-114979.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+  background-size: cover;
+  background-position: center;
+
+  .table {
+    width: 80%;
+    height: 86vh;
+    -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+    box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+    .cellAction {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+
+      .editButton {
+        padding: 2px 5px;
+        border-radius: 5px;
+        color: darkblue;
+        border: 1px dotted darkblue;
+        cursor: pointer;
+      }
+
+      .deleteButton {
+        padding: 2px 5px;
+        border-radius: 5px;
+        color: crimson;
+        border: 1px dotted crimson;
+        cursor: pointer;
+      }
+    }
+    .MuiDataGrid-cellContent {
+      color: black;
+    }
+    .css-1jbbcbn-MuiDataGrid-columnHeaderTitle {
+      color: black;
+      font-weight: bold;
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .react-confirm-alert {
+    width: 100%;
+  }
+}
